@@ -20,16 +20,27 @@ It predicts user preferences and suggests personalized movies interactively thro
 ```bash
 git clone https://github.com/TawficaBhuiyan/MovieLens_Recommender.git
 cd MovieLens_Recommender
+```
 
-2️⃣ Create and Activate Virtual Environment
+### 2️⃣ Create and Activate Virtual Environment
+
+```bash
 py -3.12 -m venv venv
 venv\Scripts\activate
+```
 
-3️⃣ Install Dependencies
+### 3️⃣ Install Dependencies
+
+```bash
 pip install --upgrade pip
 pip install -r requirements.txt
+```
 
-🧱 Project Structure
+---
+
+## 🧱 **Project Structure**
+
+```
 MovieLens_Recommender/
 │
 ├── data/                 # dataset files
@@ -41,8 +52,12 @@ MovieLens_Recommender/
 │   └── ui.py             # Gradio interface
 ├── requirements.txt
 └── README.md
+```
 
-🚀 Usage
+---
+
+## 🚀 **Usage**
+
 | **Action**              | **Command**                     |
 | ----------------------- | ------------------------------- |
 | 🧠 Train the model      | `python -m app.train_model`     |
@@ -50,19 +65,22 @@ MovieLens_Recommender/
 | 🌐 Run API backend      | `uvicorn app.main:app --reload` |
 | 💻 Launch Gradio UI     | `python -m app.ui`              |
 
+---
 
-FastAPI:
-http://127.0.0.1:8000
- → API home
-http://127.0.0.1:8000/recommend/1?top_n=5
- → Example recommendations
+## 🌐 **Access Points**
 
-Gradio:
-http://127.0.0.1:7860
- → Interactive interface
+**FastAPI:**
+- http://127.0.0.1:8000 → API home  
+- http://127.0.0.1:8000/recommend/1?top_n=5 → Example recommendations
 
- 🧩 Main Dependencies
- | Library         | Purpose                    |
+**Gradio:**
+- http://127.0.0.1:7860 → Interactive interface
+
+---
+
+## 🧩 **Main Dependencies**
+
+| Library         | Purpose                    |
 | --------------- | -------------------------- |
 | pandas          | Data manipulation          |
 | numpy           | Numerical operations       |
@@ -74,18 +92,23 @@ http://127.0.0.1:7860
 | matplotlib      | Visualization              |
 | tqdm            | Progress bars              |
 
-📊 Example Evaluation Results
+---
+
+## 📊 **Example Evaluation Results**
+
+```
 RMSE: 0.8807
 MAE:  0.6780
 Precision@10: 0.7449
 Recall@10: 0.5095
 NDCG@10: 0.7935
+```
 
-👤 Author
+---
+
+## 👤 **Author**
 
 | **Name**                  | **Details**                                         |
 | ------------------------- | --------------------------------------------------- |
-| 👨‍💻 **Tawfica Bhuiyan** | ProblemSolver & MLEnthuthiast                 |
+| 👨‍💻 **Tawfica Bhuiyan** | ProblemSolver & MLEnthuthiast                       |
 | 🌐 GitHub                 | [TawficaBhuiyan](https://github.com/TawficaBhuiyan) |
-
-```
